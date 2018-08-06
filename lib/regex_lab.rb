@@ -26,9 +26,9 @@ end
 
 def valid_phone_number?(phone)
     info = phone.scan(/(\d\d\d)-(\d\d\d)-(\d\d\d\d)/)
-end
 if info.nil?
   false
 else
   true
+end
 end
