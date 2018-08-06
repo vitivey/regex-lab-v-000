@@ -14,6 +14,7 @@ end
 def words_five_letters_long(text)
 text.scan(/\b\w{5}\b/)
 end
+words_five_letters_long(unassuming ambiguous understanding pomp circumstance uninteresting uncompromising grouchy corollary)
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   info = text.match(/[(A-Z].*\./)
