@@ -8,25 +8,15 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  info = text.scan(/^(un.*)ing\s$/)
-  if info.nil?
-    false
-  else
-    true
-  end
+ text.scan(/^(un.*)ing\s$/)
 end
 
 def words_five_letters_long(text)
-  info = text.scan(/\w{5}\s/)
-  if info.nil?
-    false
-  else
-    true
-  end
+text.scan(/\w{5}\s/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  info = text.match(/\W.*\./)
+  info = text.match(/[A-Z].*\./)
   if info.nil?
     false
   else
