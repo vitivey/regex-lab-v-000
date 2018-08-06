@@ -8,7 +8,7 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  info = text.scan(/^(un.*)ing$/)
+  info = text.scan(/^(un.*)ing\s$/)
   if info.nil?
     false
   else
