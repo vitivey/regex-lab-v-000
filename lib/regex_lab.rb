@@ -1,9 +1,12 @@
 def starts_with_a_vowel?(word)
   start = word.scan(/^[aeiou].*/)
-  start
+  if start.nil?
+    false
+  else
+    true
+  end
 end
-word="afoot"
-starts_with_a_vowel?(word)
+
 def words_starting_with_un_and_ending_with_ing(text)
   text.scan(/^(un.*)ing$/)
 end
